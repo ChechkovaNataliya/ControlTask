@@ -1,6 +1,6 @@
 ﻿// Вывести все четные элементы массива.
 
-int[] array = {1,2,3,4,5}; 
+int[] array = { 1, 3, 4, 5, 7, 1, 3}; 
 void PrintArray(int[] array) 
 {
     int count = array.Length;
@@ -19,7 +19,7 @@ void EvenNumber(int[] array)
             Console.Write($"{array[i]} ");
         }
     }
-    Console.WriteLine(); 
+    Console.WriteLine();
  }
 PrintArray(array);
 EvenNumber(array);

@@ -1,6 +1,13 @@
 ﻿// Вывести все четные элементы массива.
 
-int[] array = { 1, 3, 5}; 
+void FillArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = new Random().Next(0, 20);
+    }
+}
+
 void PrintArray(int[] array) 
 {
     int count = array.Length;
@@ -10,16 +17,20 @@ void PrintArray(int[] array)
     }
     Console.WriteLine(); 
 }
+
 void EvenNumber(int[] array) 
 {
     for (int i = 0; i < array.Length; i++) 
     {
         if((array[i]) % 2 == 0)
-        {
+         {
             Console.Write($"{array[i]} ");
-        }
+         }
     }
-    Console.WriteLine();
+    Console.WriteLine(); 
  }
+int[] array = new int[10];
+FillArray(array);
 PrintArray(array);
+Console.Write($"Чётные числа: ");
 EvenNumber(array);

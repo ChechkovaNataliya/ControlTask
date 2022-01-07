@@ -1,6 +1,6 @@
 ﻿// Вывести все четные элементы массива.
 
-int[] array = {12,2,32,43,15,61,17,18}; 
+int[] array = {1,2,3,4,5}; 
 void PrintArray(int[] array) 
 {
     int count = array.Length;
